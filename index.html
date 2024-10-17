@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <h1 class="heading">Memory Game</h1>
+    </div>
+    
+    <div class="start">
+        <button class="btn" id="starting">START</button>
+        <button class="btn" id="restarting">RESTART</button>        
+        <button class="btn"><p>Moves: <span id="moves">0</span></p></button>
+        <button class="btn"><p>Time: <span id="time">0</span> s</p></button>      
+    </div>
+    
+
+    <div class="mainBox">
+        <div class="container">
+            <!--card will show here-->
+        </div>
+    </div>
+
+    <div class="start">
+        <select class="btn" id="grid-size">
+            <option value="3x2">SIZE 3x2</option>
+            <option value="4x3">4x3</option>
+            <option value="4x4">4x4</option>
+            <option value="5x4">5x4</option>
+            <option value="6x5">6x5</option>
+            <option value="8x5">8x5</option>
+            <option value="8x6">8x6</option>
+        </select>
+        <button class="btn">RULES</button> 
+        
+    </div>
+    
+    <div class="win">
+        <h2>Congratulations!</h2>
+        <p>You completed the game in <span id="final-moves">0</span> moves and <span id="final-time">0</span> seconds.</p>
+            <p>High Score: <span id="high-score">0</span> seconds</p>
+            <p>Made By - Riya Kuila</p>
+            <button class="btn" id="play-again">Play Again</button>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
